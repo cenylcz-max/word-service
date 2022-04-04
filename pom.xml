@@ -41,8 +41,17 @@
             </exclusions>
         </dependency>
         <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.cenylcz</groupId>
             <artifactId>cenylcz-domain</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cenylcz</groupId>
+            <artifactId>cenylcz-event</artifactId>
             <version>0.0.1</version>
         </dependency>
         <dependency>

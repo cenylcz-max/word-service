@@ -19,9 +19,7 @@ public class Router {
     }
 
     private RouterFunction<ServerResponse> wordRouter(WordHandler wordHandler) {
-        return RouterFunctions.route(GET("/words").and(accept(MediaType.APPLICATION_JSON)), wordHandler::retrieveAllWords)
-                .andRoute(POST("/words").and(contentType(MediaType.APPLICATION_JSON)), wordHandler::create)
-                .andRoute(PUT("/words").and(contentType(MediaType.APPLICATION_JSON)), wordHandler::update);
+        return RouterFunctions.route(GET("/words").and(accept(MediaType.APPLICATION_JSON)), wordHandler::retrieveAllWords);
     }
 }
 
