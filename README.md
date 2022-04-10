@@ -2,8 +2,8 @@
 ```
 Create a Dockerfile
 Execute mvn clean package to generate jar file
-Build docker image by executing 'docker build -f Dockerfile -t cenylcz/cenylcz-server:1.0.0 .'
-Run docker by executing 'docker run -it -p 9000:8080 cenylcz/cenylcz-server:1.0.0'
+Build docker image by executing 'docker build -f Dockerfile -t cenylcz/word-service:1.0.0 .'
+Run docker by executing 'docker run -it -p 9000:8080 cenylcz/word-service:1.0.0'
 ```
 
 
@@ -12,4 +12,4 @@ Run docker by executing 'docker run -it -p 9000:8080 cenylcz/cenylcz-server:1.0.
 Add Maven plugin in pom.xml
 Create a DockerFile (Pay attention to args)
 Execute 'mvn clean package dockerfile:build'
-Run docker by executing 'docker run -it -p 9000:8080 cenylcz/cenylcz-server:1.0.0'
+Run docker by executing 'docker run -it -p 9000:8080 cenylcz/word-service:1.0.0'
