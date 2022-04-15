@@ -1,5 +1,6 @@
 package com.cenylcz.service;
 
+import com.cenylcz.constant.Constant;
 import com.cenylcz.domain.dictionary.Word;
 import com.cenylcz.jpa.repository.WordRepository;
 import org.springframework.stereotype.Service;
@@ -19,6 +20,8 @@ public class WordService {
     }
 
     public Word create(Word word) {
+        String alphabet = String.valueOf(word.getWord().charAt(0));
+        word.setAlphabet(Constant.alphabetMap.get(alphabet.toUpperCase()));
         return this.wordRepository.save(word);
     }
 }
